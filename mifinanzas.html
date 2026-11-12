@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad · MiFinanzas</title>
+    <style>
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #e2e8f0;
+        --accent: #059669;
+        --accent-soft: #ecfdf5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --card: #1e293b;
+          --text: #f8fafc;
+          --muted: #94a3b8;
+          --border: #334155;
+          --accent: #10b981;
+          --accent-soft: rgba(16, 185, 129, 0.12);
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+        padding: 24px 16px 48px;
+      }
+      .container {
+        max-width: 780px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 28px 24px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 22px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 1.2;
+      }
+      .subtitle {
+        margin: 4px 0 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      .lang-switch {
+        display: flex;
+        gap: 6px;
+      }
+      .lang-btn {
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--muted);
+        padding: 6px 12px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+      .lang-btn.active {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+      }
+      .highlight {
+        background: var(--accent-soft);
+        border: 1px solid rgba(16, 185, 129, 0.25);
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin-bottom: 22px;
+        font-size: 0.94rem;
+      }
+      h2 {
+        margin: 22px 0 8px;
+        font-size: 1.12rem;
+      }
+      p, li {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 8px 0 12px;
+      }
+      li { margin-bottom: 6px; }
+      a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+      .hidden { display: none; }
+      footer {
+        margin-top: 28px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div>
+          <h1 id="page-title">Política de Privacidad — MiFinanzas</h1>
+          <p class="subtitle" id="page-updated">Última actualización: noviembre de 2026</p>
+        </div>
+        <div class="lang-switch" aria-label="Language switch">
+          <button type="button" class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+          <button type="button" class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
+      </header>
+
+      <section id="content-es">
+        <div class="highlight">
+          <strong>Resumen directo:</strong> En la aplicación móvil <strong>MiFinanzas</strong>, tu información financiera (ingresos, gastos, presupuestos, metas y notas) se guarda directamente en tu teléfono. No vendemos tus datos, no mostramos publicidad ni enviamos tus registros financieros a servidores de terceros.
+        </div>
+
+        <h2>1. Información que registras en la app</h2>
+        <p>MiFinanzas te permite almacenar de forma voluntaria:</p>
+        <ul>
+          <li>Perfil básico (nombre o alias, avatar, ocupación opcional y objetivo financiero).</li>
+          <li>Registros financieros personales: gastos, ingresos, presupuestos, metas de ahorro, gastos recurrentes y notas.</li>
+          <li>Preferencias de uso: idioma, moneda, tema visual, configuración de recordatorios y un código PIN cifrado localmente si activas el bloqueo de seguridad.</li>
+        </ul>
+
+        <h2>2. Almacenamiento en el dispositivo y respaldo</h2>
+        <p>En la aplicación Android, todos tus datos se almacenan exclusivamente de manera privada dentro del dispositivo. Si utilizas la función opcional de <strong>Exportar Respaldo</strong>, tú decides dónde guardar o compartir el archivo generado.</p>
+        <p>Si en algún momento utilizas la versión web con cuenta en la nube, tus registros se sincronizan únicamente para brindarte acceso multi-dispositivo y metas compartidas bajo tu propia sesión autenticada.</p>
+
+        <h2>3. Permisos de Android que puede solicitar MiFinanzas</h2>
+        <ul>
+          <li><strong>Notificaciones:</strong> opcional, únicamente para enviarte recordatorios diarios, avisos de presupuestos o alertas de pagos recurrentes configuradas por ti dentro del dispositivo.</li>
+          <li><strong>Biometría (huella o reconocimiento facial):</strong> opcional, si activas el desbloqueo biométrico. La verificación es gestionada íntegramente por el sistema operativo Android; MiFinanzas nunca accede, lee ni almacena tus huellas ni datos biométricos.</li>
+          <li><strong>Acceso a red:</strong> utilizado únicamente si abres enlaces externos o utilizas funciones en línea opcionales.</li>
+        </ul>
+
+        <h2>4. Compartición con terceros y analítica</h2>
+        <p>MiFinanzas <strong>no vende, alquila ni comparte</strong> tu información personal o financiera con anunciantes, corredores de datos ni redes publicitarias.</p>
+
+        <h2>5. Control y eliminación total de tus datos</h2>
+        <p>Tienes control completo sobre tu información en todo momento:</p>
+        <ul>
+          <li>Puedes editar o eliminar cualquier gasto, meta, presupuesto o nota desde la propia app.</li>
+          <li>Puedes borrar permanentemente todos los datos almacenados en tu teléfono desde <strong>Configuración de Cuenta → Zona Peligrosa → Borrar Todos los Datos Locales</strong>, o desinstalando la aplicación.</li>
+        </ul>
+
+        <h2>6. Contacto y soporte</h2>
+        <p>Si tienes preguntas sobre esta Política de Privacidad o necesitas asistencia, escríbenos a: <a href="mailto:support.lextaudittech@gmail.com">support.lextaudittech@gmail.com</a>.</p>
+      </section>
+
+      <section id="content-en" class="hidden">
+        <div class="highlight">
+          <strong>Plain summary:</strong> In the <strong>MiFinanzas</strong> mobile app, your financial information (income, expenses, budgets, goals, and notes) is stored directly on your phone. We do not sell your data, run ads, or send your financial records to third-party servers.
+        </div>
+
+        <h2>1. Information you enter in the app</h2>
+        <p>MiFinanzas allows you to voluntarily store:</p>
+        <ul>
+          <li>Basic profile details (display name, avatar emoji, optional occupation, and financial focus).</li>
+          <li>Personal financial entries: expenses, income, budgets, savings goals, recurring bills, and notes.</li>
+          <li>App preferences: language, currency, theme, notification settings, and a locally hashed access PIN if you enable app lock.</li>
+        </ul>
+
+        <h2>2. On-device storage and backups</h2>
+        <p>In the Android app, all your records are stored privately inside your device. When using the optional <strong>Export Backup</strong> feature, you choose where to save or share the exported file.</p>
+        <p>If you use the optional web cloud version with an authenticated account, records are synced solely to provide multi-device access and shared goals under your account.</p>
+
+        <h2>3. Android permissions MiFinanzas may request</h2>
+        <ul>
+          <li><strong>Notifications:</strong> optional, used solely to deliver daily expense reminders, budget alerts, and recurring payment notices scheduled locally on your device.</li>
+          <li><strong>Biometrics (fingerprint or face unlock):</strong> optional, if you enable biometric app lock. Authentication is handled strictly by the Android OS; MiFinanzas never reads, accesses, or stores biometric templates.</li>
+          <li><strong>Network access:</strong> used only when opening external links or using optional online features.</li>
+        </ul>
+
+        <h2>4. Third-party sharing and ads</h2>
+        <p>MiFinanzas <strong>does not sell, rent, or share</strong> your personal or financial data with advertisers, data brokers, or ad networks.</p>
+
+        <h2>5. Control and permanent deletion of your data</h2>
+        <p>You remain in full control of your data at all times:</p>
+        <ul>
+          <li>You can edit or delete any expense, goal, budget, or note directly in the app.</li>
+          <li>You can permanently erase all data stored on your phone under <strong>Account Settings → Danger Zone → Erase All Local Data</strong>, or by uninstalling the app.</li>
+        </ul>
+
+        <h2>6. Contact & Support</h2>
+        <p>For questions about this Privacy Policy or support requests, contact us at: <a href="mailto:support.lextaudittech@gmail.com">support.lextaudittech@gmail.com</a>.</p>
+      </section>
+
+      <footer>
+        MiFinanzas · LexAuditTech · <a href="mailto:support.lextaudittech@gmail.com">support.lextaudittech@gmail.com</a>
+      </footer>
+    </main>
+
+    <script>
+      function setLang(lang) {
+        var es = document.getElementById('content-es');
+        var en = document.getElementById('content-en');
+        var btnEs = document.getElementById('btn-es');
+        var btnEn = document.getElementById('btn-en');
+        var title = document.getElementById('page-title');
+        var updated = document.getElementById('page-updated');
+        if (lang === 'en') {
+          es.classList.add('hidden');
+          en.classList.remove('hidden');
+          btnEn.classList.add('active');
+          btnEs.classList.remove('active');
+          title.textContent = 'Privacy Policy — MiFinanzas';
+          updated.textContent = 'Last updated: November 2026';
+          document.documentElement.lang = 'en';
+        } else {
+          en.classList.add('hidden');
+          es.classList.remove('hidden');
+          btnEs.classList.add('active');
+          btnEn.classList.remove('active');
+          title.textContent = 'Política de Privacidad — MiFinanzas';
+          updated.textContent = 'Última actualización: noviembre de 2026';
+          document.documentElement.lang = 'es';
+        }
+      }
+      if (navigator.language && navigator.language.toLowerCase().startsWith('en')) {
+        setLang('en');
+      }
+    </script>
+  </body>
+</html>
